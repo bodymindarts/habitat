@@ -26,7 +26,7 @@ use error::Result;
 
 const STUDIO_CMD: &'static str = "hab-studio";
 const STUDIO_CMD_ENVVAR: &'static str = "HAB_STUDIO_BINARY";
-const STUDIO_PACKAGE_IDENT: &'static str = "core/hab-studio";
+const STUDIO_PACKAGE_IDENT: &'static str = "mwrock/hab-studio";
 
 pub fn start(ui: &mut UI, args: Vec<OsString>) -> Result<()> {
     try!(inner::rerun_with_sudo_if_needed(ui));
